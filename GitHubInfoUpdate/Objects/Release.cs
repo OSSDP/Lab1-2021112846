@@ -20,4 +20,5 @@ public class Release
     public string? Body { get; set; }
     [JsonPropertyName("assets")]
     public List<Assets>? Assets { get; set; }
+    // 已修改
 }
