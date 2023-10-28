@@ -4,6 +4,7 @@ using System;
 using System.Reflection;
 
 //B2 的修改
+//B1 的修改
 namespace GitHubInfoUpdate
 {
     public partial class MainForm : Form
@@ -99,7 +100,7 @@ namespace GitHubInfoUpdate
                     (var repo, var owner, var date, var tag, var slience) = config.ReleaseInfo[index].ToTuple();
 
                     var tmp = await func.GetRelease($"https://api.github.com/repos/{owner}/{repo}/releases");
-                    tmpMonitors[index] = tmp;
+                    tmpMonitors[index] = tmp;// C4 的修改
                     if (tmp?.Count > 0)
                     {
                         ListViewItem item = new();
