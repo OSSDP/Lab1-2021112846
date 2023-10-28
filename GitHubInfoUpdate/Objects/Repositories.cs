@@ -17,7 +17,6 @@ namespace GitHubInfoUpdate.Objects
         public (string? Repo, string? Owner, DateTime? InstalledDate, string? InstalledTag, bool Silence) ToTuple()
         {
             return (Repo, Owner, InstalledDate, InstalledTag, Silence);
-            // 已修改
         }
     }
 }

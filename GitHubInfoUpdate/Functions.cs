@@ -58,7 +58,9 @@ namespace GitHubInfoUpdate
             {
                 var json = JsonSerializer.Serialize(config, jsonOptions);
                 if (json != null)
+                {
                     File.WriteAllText(file, json);
+                }
                 return true;
             }
             catch (Exception e)
