@@ -13,6 +13,7 @@ namespace GitHubInfoUpdate
             ApplicationConfiguration.Initialize();
             Application.Run(new MainForm());
             // 已被修改
+            // C4 的修改
         }
     }
 }// B1 的修改
