@@ -12,6 +12,7 @@ namespace GitHubInfoUpdate
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new MainForm());
+            // 已被修改
         }
     }
 }

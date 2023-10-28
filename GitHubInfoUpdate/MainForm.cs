@@ -98,7 +98,6 @@ namespace GitHubInfoUpdate
                     (var repo, var owner, var date, var tag, var slience) = config.ReleaseInfo[index].ToTuple();
 
                     var tmp = await func.GetRelease($"https://api.github.com/repos/{owner}/{repo}/releases");
-                    //monitors.Add(tmp);
                     tmpMonitors[index] = tmp;
                     if (tmp?.Count > 0)
                     {
