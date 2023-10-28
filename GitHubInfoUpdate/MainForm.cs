@@ -3,6 +3,7 @@ using GitHubInfoUpdate.Objects;
 using System;
 using System.Reflection;
 
+//B2 的修改
 namespace GitHubInfoUpdate
 {
     public partial class MainForm : Form
